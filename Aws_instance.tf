@@ -3,7 +3,7 @@ resource "aws_instance" "main" {
   instance_type     = "t2.micro"
   availability_zone = "ap-south-1a"
   security_groups   =  ["${aws_security_group.main.name}"]
-  vpc_security_group_ids = aws_vpc.main.id
+  //vpc_security_group_ids = aws_vpc.main.id
   key_name = "Umamakeswaran-in"
   user_data = <<-EOF
 
